@@ -7,8 +7,8 @@
   "ioValues": [
     {
       "name": "Sign_width",
-      "ioValue": 300,
-      "currentEquation": "300"
+      "ioValue": 100,
+      "currentEquation": "100"
     },
     {
       "name": "ply_thick",
@@ -37,7 +37,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 300,
+          "ioValue": 100,
           "currentEquation": "300"
         }
       ]
@@ -51,8 +51,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.3326719576719577,
-      "y": 0.29819277108433734,
+      "x": 0.39285714285714285,
+      "y": 0.30120481927710846,
       "uniqueID": "id-3021",
       "ioValues": [
         {
@@ -75,20 +75,20 @@
     },
     {
       "atomType": "Import",
-      "x": 0.08134920634920635,
-      "y": 0.5512048192771084,
+      "x": 0.06878306878306878,
+      "y": 0.5813253012048193,
       "uniqueID": "id-3028",
       "fileName": "0.svg",
       "name": "Import",
       "type": "SVG",
       "repoOwner": "alzatin",
       "repoName": "Custom-svg-sign",
-      "SVGwidth": 10
+      "SVGwidth": 1
     },
     {
       "atomType": "Extrude",
-      "x": 0.3214285714285714,
-      "y": 0.6596385542168675,
+      "x": 0.3287037037037037,
+      "y": 0.6927710843373494,
       "uniqueID": "id-3030",
       "ioValues": [
         {
@@ -103,8 +103,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.4788359788359788,
-      "y": 0.5090361445783133,
+      "x": 0.6342592592592592,
+      "y": 0.4006024096385542,
       "uniqueID": "id-3034",
       "ioValues": [
         {
@@ -119,8 +119,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.19378306878306878,
-      "y": 0.7710843373493976,
+      "x": 0.19907407407407407,
+      "y": 0.746987951807229,
       "uniqueID": "id-3053",
       "name": "Scale",
       "ioValues": [
@@ -130,7 +130,8 @@
         },
         {
           "name": "Scale Factor",
-          "ioValue": 300
+          "ioValue": 50,
+          "currentEquation": "Sign_width/2"
         }
       ],
       "topLevel": false,
@@ -171,7 +172,7 @@
           "ioValues": [
             {
               "name": "scaleFactor",
-              "ioValue": 300
+              "ioValue": 50
             }
           ],
           "codeVersion": 1,
@@ -346,6 +347,111 @@
       },
       "unitsKey": "Unitless",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Move",
+      "x": 0.5291005291005292,
+      "y": 0.6325301204819277,
+      "uniqueID": "id-3082",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 4,
+          "currentEquation": "0"
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.4074074074074074,
+      "y": 0.8433734939759037,
+      "uniqueID": "id-3088",
+      "name": "x /2",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 8
+        }
+      ],
+      "currentEquation": "x /2"
+    },
+    {
+      "atomType": "Export",
+      "x": 0.7943121693121694,
+      "y": 0.7259036144578314,
+      "uniqueID": "id-3092",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Custom-svg-sign",
+          "currentEquation": "Custom-svg-sign"
+        }
+      ],
+      "type": "STL",
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Custom-svg-sign"
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.7003968253968255,
+      "y": 0.8072289156626505,
+      "uniqueID": "id-3097",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 2,
+          "currentEquation": "2"
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Custom-svg-sign",
+          "currentEquation": "Custom-svg-sign"
+        }
+      ],
+      "partName": "Custom-svg-sign",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -358,11 +464,6 @@
       "ap2Name": "diameter",
       "ap1ID": "id-3018",
       "ap2ID": "id-3015"
-    },
-    {
-      "ap2Name": "Scale Factor",
-      "ap1ID": "id-3018",
-      "ap2ID": "id-3053"
     },
     {
       "ap2Name": "geometry1",
@@ -380,9 +481,9 @@
       "ap2ID": "id-3030"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-3028",
-      "ap2ID": "id-3030"
+      "ap2Name": "x",
+      "ap1ID": "id-3025",
+      "ap2ID": "id-3088"
     },
     {
       "ap2Name": "Geometry",
@@ -390,9 +491,39 @@
       "ap2ID": "id-3053"
     },
     {
-      "ap2Name": "geometry2",
+      "ap2Name": "geometry",
       "ap1ID": "id-3030",
+      "ap2ID": "id-3082"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-3034",
+      "ap2ID": "id-2878"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3034",
+      "ap2ID": "id-3092"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3034",
+      "ap2ID": "id-3097"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3053",
+      "ap2ID": "id-3030"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-3082",
       "ap2ID": "id-3034"
+    },
+    {
+      "ap2Name": "zDist",
+      "ap1ID": "id-3088",
+      "ap2ID": "id-3082"
     }
   ],
   "unitsKey": "MM",
