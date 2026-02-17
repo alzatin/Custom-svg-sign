@@ -7,12 +7,13 @@
   "ioValues": [
     {
       "name": "Sign_width",
-      "ioValue": 100,
-      "currentEquation": "100"
+      "ioValue": 300,
+      "currentEquation": "300"
     },
     {
       "name": "ply_thick",
-      "ioValue": 8
+      "ioValue": 10,
+      "currentEquation": "10"
     }
   ],
   "topLevel": true,
@@ -37,7 +38,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 100,
+          "ioValue": 300,
           "currentEquation": "300"
         }
       ]
@@ -61,7 +62,7 @@
         },
         {
           "name": "height",
-          "ioValue": 8,
+          "ioValue": 10,
           "currentEquation": "10"
         }
       ]
@@ -87,8 +88,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.3287037037037037,
-      "y": 0.6927710843373494,
+      "x": 0.328042328042328,
+      "y": 0.7078313253012049,
       "uniqueID": "id-3030",
       "ioValues": [
         {
@@ -97,14 +98,14 @@
         },
         {
           "name": "height",
-          "ioValue": 8
+          "ioValue": 10
         }
       ]
     },
     {
       "atomType": "Difference",
-      "x": 0.6342592592592592,
-      "y": 0.4006024096385542,
+      "x": 0.6686507936507937,
+      "y": 0.4066265060240964,
       "uniqueID": "id-3034",
       "ioValues": [
         {
@@ -119,8 +120,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.19907407407407407,
-      "y": 0.746987951807229,
+      "x": 0.19642857142857142,
+      "y": 0.75,
       "uniqueID": "id-3053",
       "name": "Scale",
       "ioValues": [
@@ -130,7 +131,7 @@
         },
         {
           "name": "Scale Factor",
-          "ioValue": 50,
+          "ioValue": 150,
           "currentEquation": "Sign_width/2"
         }
       ],
@@ -172,7 +173,7 @@
           "ioValues": [
             {
               "name": "scaleFactor",
-              "ioValue": 50
+              "ioValue": 150
             }
           ],
           "codeVersion": 1,
@@ -350,8 +351,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.5291005291005292,
-      "y": 0.6325301204819277,
+      "x": 0.5324074074074074,
+      "y": 0.6355421686746988,
       "uniqueID": "id-3082",
       "ioValues": [
         {
@@ -368,7 +369,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": 4,
+          "ioValue": 5,
           "currentEquation": "0"
         }
       ]
@@ -382,15 +383,15 @@
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 8
+          "ioValue": 10
         }
       ],
       "currentEquation": "x /2"
     },
     {
       "atomType": "Export",
-      "x": 0.7943121693121694,
-      "y": 0.7259036144578314,
+      "x": 0.8412698412698413,
+      "y": 0.7319277108433735,
       "uniqueID": "id-3092",
       "ioValues": [
         {
@@ -420,7 +421,7 @@
     {
       "atomType": "Gcode",
       "x": 0.7003968253968255,
-      "y": 0.8072289156626505,
+      "y": 0.8162650602409638,
       "uniqueID": "id-3097",
       "ioValues": [
         {
@@ -429,7 +430,8 @@
         },
         {
           "name": "Tool Size",
-          "ioValue": 6.35
+          "ioValue": 4,
+          "currentEquation": "4"
         },
         {
           "name": "Passes",
