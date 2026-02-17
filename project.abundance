@@ -7,13 +7,8 @@
   "ioValues": [
     {
       "name": "Sign_width",
-      "ioValue": 250,
-      "currentEquation": "250"
-    },
-    {
-      "name": "ply_thick",
-      "ioValue": 8,
-      "currentEquation": "8"
+      "ioValue": 300,
+      "currentEquation": "300"
     }
   ],
   "topLevel": true,
@@ -32,13 +27,13 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.21031746031746032,
-      "y": 0.2891566265060241,
-      "uniqueID": "id-2998",
+      "x": 0.24404761904761904,
+      "y": 0.35240963855421686,
+      "uniqueID": "id-3015",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 250,
+          "ioValue": 300,
           "currentEquation": "300"
         }
       ]
@@ -46,62 +41,16 @@
     {
       "atomType": "Input",
       "x": 0.0264,
-      "y": 0.27710843373493976,
-      "uniqueID": "id-3001",
+      "y": 0.21987951807228914,
+      "uniqueID": "id-3018",
       "name": "Sign_width"
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.3326719576719577,
-      "y": 0.3795180722891566,
-      "uniqueID": "id-3004",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "height",
-          "ioValue": 8,
-          "currentEquation": "50"
-        }
-      ]
-    },
-    {
-      "atomType": "Input",
-      "x": 0.0264,
-      "y": 0.37310843373493974,
-      "uniqueID": "id-3008",
-      "name": "ply_thick"
-    },
-    {
-      "atomType": "Import",
-      "x": 0.25462962962962965,
-      "y": 0.8132530120481928,
-      "uniqueID": "id-3013",
-      "fileName": "Dog_silhouette.svg",
-      "name": "Import",
-      "type": "SVG",
-      "repoOwner": "alzatin",
-      "repoName": "Custom-svg-sign",
-      "SVGwidth": 10
     }
   ],
   "allConnectors": [
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2998",
-      "ap2ID": "id-3004"
-    },
-    {
       "ap2Name": "diameter",
-      "ap1ID": "id-3001",
-      "ap2ID": "id-2998"
-    },
-    {
-      "ap2Name": "height",
-      "ap1ID": "id-3008",
-      "ap2ID": "id-3004"
+      "ap1ID": "id-3018",
+      "ap2ID": "id-3015"
     }
   ],
   "unitsKey": "MM",
