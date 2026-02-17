@@ -4,12 +4,6 @@
   "y": 0,
   "uniqueID": "id-2877",
   "name": "Custom-svg-sign",
-  "ioValues": [
-    {
-      "name": "Sign_width",
-      "ioValue": 10
-    }
-  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -23,26 +17,6 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
-    },
-    {
-      "atomType": "Circle",
-      "x": 0.2208994708994709,
-      "y": 0.41566265060240964,
-      "uniqueID": "id-2984",
-      "ioValues": [
-        {
-          "name": "diameter",
-          "ioValue": 300,
-          "currentEquation": "300"
-        }
-      ]
-    },
-    {
-      "atomType": "Input",
-      "x": 0.0264,
-      "y": 0.25301204819277107,
-      "uniqueID": "id-2988",
-      "name": "Sign_width"
     }
   ],
   "allConnectors": [],
