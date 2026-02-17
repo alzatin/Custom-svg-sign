@@ -9,6 +9,10 @@
       "name": "Sign_width",
       "ioValue": 300,
       "currentEquation": "300"
+    },
+    {
+      "name": "ply_thick",
+      "ioValue": 8
     }
   ],
   "topLevel": true,
@@ -27,8 +31,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.24404761904761904,
-      "y": 0.35240963855421686,
+      "x": 0.20767195767195767,
+      "y": 0.2469879518072289,
       "uniqueID": "id-3015",
       "ioValues": [
         {
@@ -44,13 +48,59 @@
       "y": 0.21987951807228914,
       "uniqueID": "id-3018",
       "name": "Sign_width"
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.3597883597883598,
+      "y": 0.3704819277108434,
+      "uniqueID": "id-3021",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 8,
+          "currentEquation": "10"
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0264,
+      "y": 0.31587951807228914,
+      "uniqueID": "id-3025",
+      "name": "ply_thick"
+    },
+    {
+      "atomType": "Import",
+      "x": 0.1798941798941799,
+      "y": 0.6144578313253012,
+      "uniqueID": "id-3028",
+      "fileName": "0.svg",
+      "name": "Import",
+      "type": "SVG",
+      "repoOwner": "alzatin",
+      "repoName": "Custom-svg-sign",
+      "SVGwidth": 10
     }
   ],
   "allConnectors": [
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3015",
+      "ap2ID": "id-3021"
+    },
+    {
       "ap2Name": "diameter",
       "ap1ID": "id-3018",
       "ap2ID": "id-3015"
+    },
+    {
+      "ap2Name": "height",
+      "ap1ID": "id-3025",
+      "ap2ID": "id-3021"
     }
   ],
   "unitsKey": "MM",
