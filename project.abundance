@@ -12,8 +12,8 @@
     },
     {
       "name": "ply_thick",
-      "ioValue": 10,
-      "currentEquation": "10"
+      "ioValue": 5,
+      "currentEquation": "5"
     }
   ],
   "topLevel": true,
@@ -32,8 +32,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.26653439153439157,
-      "y": 0.3403614457831325,
+      "x": 0.20105820105820105,
+      "y": 0.29518072289156627,
       "uniqueID": "id-2892",
       "ioValues": [
         {
@@ -56,13 +56,51 @@
       "y": 0.35503614457831323,
       "uniqueID": "id-2902",
       "name": "ply_thick"
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.41137566137566134,
+      "y": 0.4066265060240964,
+      "uniqueID": "id-2905",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 5
+        }
+      ]
+    },
+    {
+      "atomType": "Import",
+      "x": 0.23412698412698413,
+      "y": 0.6506024096385542,
+      "uniqueID": "id-2909",
+      "fileName": "Dog_silhouette.svg",
+      "name": "Import",
+      "type": "SVG",
+      "repoOwner": "alzatin",
+      "repoName": "Custom-svg-sign",
+      "SVGwidth": 10
     }
   ],
   "allConnectors": [
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2892",
+      "ap2ID": "id-2905"
+    },
+    {
       "ap2Name": "diameter",
       "ap1ID": "id-2899",
       "ap2ID": "id-2892"
+    },
+    {
+      "ap2Name": "height",
+      "ap1ID": "id-2902",
+      "ap2ID": "id-2905"
     }
   ],
   "unitsKey": "MM",
